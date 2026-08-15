@@ -1,0 +1,6 @@
+species,status,evidence,basis,source_label,source_url
+SO2,reported detection,>3 sigma,joint atmospheric retrieval,"Beatty et al. 2024, ApJL",https://doi.org/10.3847/2041-8213/ad55e9
+H2O,reported detection,>3 sigma,joint atmospheric retrieval,"Beatty et al. 2024, ApJL",https://doi.org/10.3847/2041-8213/ad55e9
+CO2,reported detection,>3 sigma,joint atmospheric retrieval,"Beatty et al. 2024, ApJL",https://doi.org/10.3847/2041-8213/ad55e9
+CH4,reported detection,>3 sigma; underabundant,joint retrieval versus equilibrium expectation,"Beatty et al. 2024, ApJL",https://doi.org/10.3847/2041-8213/ad55e9
+O2,no evidence,not reported,oxygen-bearing molecules do not imply molecular oxygen,"Beatty et al. 2024, ApJL",https://doi.org/10.3847/2041-8213/ad55e9

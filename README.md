@@ -1,10 +1,20 @@
-# GJ 3470 b — Real TESS Transit Report
+# GJ 3470 b: Sulfur Photochemistry on a Warm Neptune
 
+<!-- TARGET-IDENTITY-START -->
+<p align="center">
+  <img src="assets/artist_concept.webp" alt="Artist's interpretation of GJ 3470 b near its host star" width="900">
+</p>
+
+<p align="center"><em>AI-generated artist's interpretation informed by the measured system properties; not a direct image.</em></p>
+
+**Warm Neptune · sulfur dioxide · JWST context + TESS**
+
+A low-mass warm Neptune whose JWST spectrum reveals disequilibrium sulfur chemistry, paired with a reproducible TESS transit fit and a source-graded molecular evidence review.
+<!-- TARGET-IDENTITY-END -->
 <p align="center">
   <img src="figures/gj3470b_tess_transit.png" alt="Phase-folded real TESS transit light curve of GJ 3470 b" width="760">
 </p>
 
-One real public TESS SPOC light curve; one historical NASA Exoplanet Archive ephemeris; one timing-adjusted, limb-darkened transit fit.
 
 **[Open the full report](https://biswajit1999.github.io/gj3470b-exoplanet-report/)** — the live GitHub Pages version.
 
@@ -20,6 +30,7 @@ One real public TESS SPOC light curve; one historical NASA Exoplanet Archive eph
 pip install -r requirements.txt
 python scripts/analyze_transit.py
 python scripts/analyze_multisector.py
+python scripts/analyze_atmospheric_evidence.py
 pytest tests/ -v
 ```
 
@@ -55,6 +66,24 @@ The archive prediction was timing-adjusted independently in 1 fitted sector(s) (
 
 The per-sector table is in [`figures/multisector_statistics.csv`](figures/multisector_statistics.csv). Regenerate all three figures with `python scripts/analyze_multisector.py`.
 <!-- MULTISECTOR-UPGRADE-END -->
+
+<!-- ATMOSPHERE-EVIDENCE-START -->
+## Atmospheric evidence: detection, limit, or unknown?
+
+<p align="center"><img src="figures/molecular_evidence.png" alt="Source-graded atmospheric evidence for GJ 3470 b" width="820"></p>
+
+The cited joint JWST, Hubble, and Spitzer retrieval reports four molecules above 3 sigma and interprets SO2 as disequilibrium photochemistry. This repository audits those published claims but does not re-run the atmospheric retrieval because its reduced spectrum is not bundled here.
+
+| Species | Status | Evidence | Basis |
+|---|---|---|---|
+| SO2 | reported detection | >3 sigma | joint atmospheric retrieval |
+| H2O | reported detection | >3 sigma | joint atmospheric retrieval |
+| CO2 | reported detection | >3 sigma | joint atmospheric retrieval |
+| CH4 | reported detection | >3 sigma; underabundant | joint retrieval versus equilibrium expectation |
+| O2 | no evidence | not reported | oxygen-bearing molecules do not imply molecular oxygen |
+
+Primary source: [Beatty et al. 2024, ApJL](https://doi.org/10.3847/2041-8213/ad55e9). The table is also available as [`data/atmospheric_evidence.csv`](data/atmospheric_evidence.csv). Oxygen-bearing species such as H2O, CO2, and SO2 are **not** evidence for molecular oxygen (O2) or a biosignature.
+<!-- ATMOSPHERE-EVIDENCE-END -->
 
 ## System context
 
