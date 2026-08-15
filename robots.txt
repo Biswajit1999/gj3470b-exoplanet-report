@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://biswajit1999.github.io/gj3470b-exoplanet-report/sitemap.xml
