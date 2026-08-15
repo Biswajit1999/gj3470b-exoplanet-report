@@ -70,6 +70,8 @@ The per-sector table is in [`figures/multisector_statistics.csv`](figures/multis
 <!-- ATMOSPHERE-EVIDENCE-START -->
 ## Atmospheric evidence: detection, limit, or unknown?
 
+> **Evidence scope — citation only; no spectrum bundled.** The molecular table and evidence graphic summarize the cited retrieval. This repository does not contain or reanalyze a reduced planetary spectrum.
+
 <p align="center"><img src="figures/molecular_evidence.png" alt="Source-graded atmospheric evidence for GJ 3470 b" width="820"></p>
 
 The cited joint JWST, Hubble, and Spitzer retrieval reports four molecules above 3 sigma and interprets SO2 as disequilibrium photochemistry. This repository audits those published claims but does not re-run the atmospheric retrieval because its reduced spectrum is not bundled here.
