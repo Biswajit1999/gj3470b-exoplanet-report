@@ -32,6 +32,7 @@ analysis does not query a changing live service at run time.
 ## Additional TESS sectors for robustness analysis
 
 All are unmodified standard-cadence SPOC light curves from the same [MAST TESS collection](https://doi.org/10.17909/t9-nmc8-f686).
+Sector 44 was retrieved 2026-08-15; Sectors 45, 46, 71, and 72 were retrieved 2026-10-04 after a complete target-cone product query.
 
 - Sector 44: `tess2021284114741-s0044-0000000019028197-0215-s_lc.fits` (1,776,960 bytes)
   - MAST URI: `mast:TESS/product/tess2021284114741-s0044-0000000019028197-0215-s_lc.fits`
