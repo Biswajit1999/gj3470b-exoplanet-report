@@ -28,7 +28,7 @@ A low-mass warm Neptune whose JWST spectrum reveals disequilibrium sulfur chemis
 ## Data sources
 
 - **System parameters** — the saved `pscomppars` row from the [NASA Exoplanet Archive TAP service](https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Cra%2Cdec%2Cpl_orbper%2Cpl_tranmid%2Cpl_trandur%2Cpl_rade%2Cpl_bmasse%2Cpl_eqt%2Cpl_orbsmax%2Csy_dist%2Csy_tmag%2Cst_teff%2Cst_rad%2Cst_mass%2Cdisc_year%2Cdiscoverymethod%2Cdisc_refname%2Cdisc_pubdate%2Cdisc_facility+from+pscomppars+where+pl_name%3D%27GJ+3470+b%27&format=csv).
-- **Observed photometry** — unmodified MAST file `tess2021284114741-s0044-0000000019028197-0215-s_lc.fits`, TESS Sector 44, DOI [10.17909/t9-nmc8-f686](https://doi.org/10.17909/t9-nmc8-f686). This is a real SPOC reduced light curve, not simulated data.
+- **Observed photometry** — five unmodified MAST SPOC 2-minute light curves from TESS Sectors 44, 45, 46, 71, and 72, DOI [10.17909/t9-nmc8-f686](https://doi.org/10.17909/t9-nmc8-f686). These are real reduced light curves, not simulated data.
 - Exact URLs, IDs, retrieval date, and SHA-256 checksum are in [`data/SOURCE.md`](data/SOURCE.md).
 
 ## Reproduce the analysis
@@ -63,7 +63,7 @@ The timing-adjusted transit is strongly preferred by ΔBIC = 7853.6. Its fitted 
 <!-- MULTISECTOR-UPGRADE-START -->
 ## Multi-sector robustness and correlated noise
 
-The archive prediction was timing-adjusted independently in 1 fitted sector(s) (S44), of which 1 meet Delta BIC >= 10. Formal depth errors were inflated by sqrt(max(reduced chi-square, 1)) times the residual time-averaging beta factor (observed range 1.12-1.12). The robust inverse-variance model depth across supported sectors is 6972.3 +/- 90.8 ppm; a sector-to-sector Q test requires at least two supported sectors. These scaled errors address underestimated scatter and short-timescale correlation, but they are not a full Gaussian-process or physical limb-darkened transit fit.
+The archive prediction was timing-adjusted independently in five fitted sectors (S44, S45, S46, S71, and S72); all five meet ΔBIC ≥ 10. Formal depth errors were inflated by sqrt(max(reduced chi-square, 1)) times the residual time-averaging beta factor (range 1.12–1.51). The robust inverse-variance depth is 6910.9 ± 50.3 ppm. The sector-consistency statistic is Q = 1.97 for 4 dof (p = 0.740), so this diagnostic finds no excess depth dispersion across the five sectors. These scaled errors address underestimated scatter and short-timescale correlation, but they are not a full Gaussian-process or global physical transit fit.
 
 <p align="center"><img src="figures/gj3470b_multisector_transits.png" alt="Independent sector transit fits for GJ 3470 b" width="760"></p>
 
@@ -131,7 +131,7 @@ LICENSE                     MIT
 
 1. [Bonfils et al. 2012](https://ui.adsabs.harvard.edu/abs/2012A%26A...546A..27B/abstract) — discovery reference as listed by the NASA Exoplanet Archive.
 2. Ricker, G. R. et al. (2015), *Transiting Exoplanet Survey Satellite (TESS)*, JATIS 1, 014003, [doi:10.1117/1.JATIS.1.1.014003](https://doi.org/10.1117/1.JATIS.1.1.014003).
-3. TESS Team, *TESS Light Curves — All Sectors*, MAST, [doi:10.17909/t9-nmc8-f686](https://doi.org/10.17909/t9-nmc8-f686); Sector 44 used here.
+3. TESS Team, *TESS Light Curves — All Sectors*, MAST, [doi:10.17909/t9-nmc8-f686](https://doi.org/10.17909/t9-nmc8-f686); Sectors 44, 45, 46, 71, and 72 used here.
 4. [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/), `pscomppars` TAP row retrieved 2026-08-15.
 
 ## Author
