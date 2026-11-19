@@ -27,6 +27,13 @@ A low-mass warm Neptune whose JWST spectrum reveals disequilibrium sulfur chemis
 
 ## Research evidence and downloads
 
+
+- [Download the machine-readable table profiles](evidence/table-profiles.json) for 4 archived tables. Open `table-evidence.html` from the checkout for the coverage chart.
+- Start with [Summary statistics](figures/summary_statistics.csv), [Multisector statistics](figures/multisector_statistics.csv), [Data source notes](data/SOURCE.md).
+- [View Gj3470b depth consistency](figures/gj3470b_depth_consistency.png).
+
+To rebuild the table profiles after rebuilding the evidence inventory, run `python scripts/profile_evidence_tables.py` followed by `python scripts/render_table_profiles.py`.
+
 [Open the evidence browser](https://biswajit1999.github.io/gj3470b-exoplanet-report/evidence.html) for 13 selected files, including [`summary_statistics.csv`](figures/summary_statistics.csv). Each file has a download link and SHA-256 digest.
 
 Rebuild the inventory and browser with `python scripts/evidence_catalog.py` and `python scripts/render_evidence_page.py`.
