@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "project": "GJ 3470 b: Sulfur Photochemistry on a Warm Neptune",
+  "tables": [
+    {
+      "path": "data/atmospheric_evidence.csv",
+      "label": "Atmospheric evidence",
+      "role": "Data and provenance",
+      "rows": 5,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "species",
+          "blank": 0,
+          "text": 5,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "status",
+          "blank": 0,
+          "text": 5,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "evidence",
+          "blank": 0,
+          "text": 5,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "basis",
+          "blank": 0,
+          "text": 5,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "source_label",
+          "blank": 0,
+          "text": 5,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "source_url",
+          "blank": 0,
+          "text": 5,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "data/system_parameters.csv",
+      "label": "System parameters",
+      "role": "Data and provenance",
+      "rows": 1,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "pl_name",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "hostname",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "ra",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 119.7735021,
+          "maximum": 119.7735021
+        },
+        {
+          "name": "dec",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 15.391209,
+          "maximum": 15.391209
+        },
+        {
+          "name": "pl_orbper",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 3.3366496,
+          "maximum": 3.3366496
+        },
+        {
+          "name": "pl_tranmid",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 2455983.70421,
+          "maximum": 2455983.70421
+        },
+        {
+          "name": "pl_trandur",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 1.8984,
+          "maximum": 1.8984
+        },
+        {
+          "name": "pl_rade",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 4.57,
+          "maximum": 4.57
+        },
+        {
+          "name": "pl_bmasse",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 13.9,
+          "maximum": 13.9
+        },
+        {
+          "name": "pl_eqt",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 593.5,
+          "maximum": 593.5
+        },
+        {
+          "name": "pl_orbsmax",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 0.0355,
+          "maximum": 0.0355
+        },
+        {
+          "name": "sy_dist",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 29.4214,
+          "maximum": 29.4214
+        },
+        {
+          "name": "sy_tmag",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 10.2479,
+          "maximum": 10.2479
+        },
+        {
+          "name": "st_teff",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 3600.0,
+          "maximum": 3600.0
+        },
+        {
+          "name": "st_rad",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 0.547,
+          "maximum": 0.547
+        },
+        {
+          "name": "st_mass",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 0.539,
+          "maximum": 0.539
+        },
+        {
+          "name": "disc_year",
+          "blank": 0,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 2012.0,
+          "maximum": 2012.0
+        },
+        {
+          "name": "discoverymethod",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "disc_refname",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "disc_pubdate",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "disc_facility",
+          "blank": 0,
+          "text": 1,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "figures/summary_statistics.csv",
+      "label": "Summary statistics",
+      "role": "Tables and numerical results",
+      "rows": 36,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "quantity",
+          "blank": 0,
+          "text": 36,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "value",
+          "blank": 0,
+          "text": 1,
+          "finite": 35,
+          "nonfinite": 0
+        },
+        {
+          "name": "unit",
+          "blank": 28,
+          "text": 8,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "figures/multisector_statistics.csv",
+      "label": "Multisector statistics",
+      "role": "Tables and numerical results",
+      "rows": 5,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "sector",
+          "blank": 0,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 44.0,
+          "maximum": 72.0
+        },
+        {
+          "name": "filename",
+          "blank": 0,
+          "text": 5,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "transit_events",
+          "blank": 0,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 6.0,
+          "maximum": 7.0
+        },
+        {
+          "name": "n_points",
+          "blank": 0,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 2050.0,
+          "maximum": 2392.0
+        },
+        {
+          "name": "transit_supported",
+          "blank": 0,
+          "text": 5,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "delta_bic",
+          "blank": 0,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 6500.619013,
+          "maximum": 7853.561492
+        },
+        {
+          "name": "timing_shift_hours",
+          "blank": 0,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 0.06517547739,
+          "maximum": 0.07976042384
+        },
+        {
+          "name": "depth_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 6837.517851,
+          "maximum": 6996.151572
+        },
+        {
+          "name": "formal_error_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 80.96385593,
+          "maximum": 88.12018495
+        },
+        {
+          "name": "scatter_scaled_error_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 80.96385593,
+          "maximum": 91.16568288
+        },
+        {
+          "name": "reduced_chi_square",
+          "blank": 0,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 0.9795220626,
+          "maximum": 1.133466231
+        },
+        {
+          "name": "beta",
+          "blank": 0,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 1.121218576,
+          "maximum": 1.512099917
+        },
+        {
+          "name": "robust_error_ppm",
+          "blank": 0,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 90.77817927,
+          "maximum": 134.2028752
+        }
+      ]
+    }
+  ],
+  "excluded": []
+}
